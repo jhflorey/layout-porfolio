@@ -1,0 +1,158 @@
+/* Global */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 100%;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Introduction */
+.introduction{
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 700px;
+}
+
+.introduction__content{
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.introduction__image{
+  border: 7px solid #44c7f4;
+}
+
+.introduction__name{
+  font-size: 3em;
+  letter-spacing: 6px;
+  color: #fff;
+  line-height: 1.1;
+  font-weight: 500;
+  font-family: 'Gidugu', sans-serif;
+  margin-top: 1rem;
+}
+
+.introduction__title{
+  color: #44c7f4;
+  letter-spacing: 2px;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.introduction__social{
+  display: flex;
+  margin-top: 6rem;
+  justify-content: center;
+}
+
+.introduction__social .social__item{
+  width: 35px;
+  height: 35px;
+  border: 1px solid white;
+  margin-right: 20px;
+}
+
+.social__item a{
+  color: white;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 35px;
+  transition: all 0.5s;
+}
+
+.social__item:hover a{
+  color: #44c7f4;
+}
+
+.introduction__carousel p{
+  color: white;
+  text-align: center;
+  font-size: 1.1em;
+  line-height: 2;
+  letter-spacing: 2px;
+}
+
+.introduction__carousel .carousel-indicators{
+  bottom: -4rem;
+}
+
+.introduction__carousel .carousel-indicators  li.active{
+  background-color: #44c7f4;
+}
+
+@media screen and (max-width: 1440px){
+  .introduction__social{
+    margin-top: 7rem;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .introduction__social{
+    margin-top: 7rem;
+  }
+
+  .introduction__carousel p{
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .introduction__social{
+    margin-top: 8rem;
+  }
+}
+
+@media screen and (max-width: 576px){
+  .introduction__content{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .introduction__content{
+    width: 95%;
+  }
+  .introduction__title{
+    font-size: 0.9em;
+  }
+  .introduction__social{
+    margin-top: 9rem;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .introduction__title{
+    display: flex;
+    flex-direction: column;    
+  }
+
+  .introduction__social{
+    margin-top: 12rem;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .introduction{
+    height: 800px;
+  }
+}
+
+
+
+
